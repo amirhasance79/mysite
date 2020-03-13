@@ -1,0 +1,44 @@
+{% extends "login.html" %}
+
+{% block pass %}
+
+<form action='/accounts/auth' method="POST" >‌
+    <div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="password" name="password">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+
+    <div class="wrap-input100 validate-input" data-validate="Enter password again">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="Re_password" >
+						<span class="focus-input100" data-placeholder="Re_Password"></span>
+					</div>
+
+{% endblock %}
+{% block login %}
+<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn" type="submit" >
+								SignUp
+							</button>
+						</div>
+                    </div>
+                    
+
+{% endblock %}
+
+
+</form>
+{% block SingUp %}
+
+    <div>
+
+    </div>
+
+{% endblock %}
